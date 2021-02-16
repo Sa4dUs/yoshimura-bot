@@ -1,1 +1,1 @@
-worker: python yoshimura.py
+worker: python bot.py
