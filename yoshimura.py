@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import random
+import os
 
 # API info
 characters = ["kaneki", "touka", "rize", "nishiki", "yoshimura", "tsukiyama", "hinami", "yomo", "uta", "itori", "jason", "ayato", "banjou", "nico", "eto", "kurona", "nashiro", "takizawa", "noro", "tatara", "amon", "mado", "hide", "juuzou", "yukinori", "akira", "arima", "urie", "shirazu", "tooru", "saiko", "sasaki", "ching-li", "touma"]
@@ -160,4 +161,4 @@ async def curio(ctx):
     await ctx.send(embed=embed)
     del random_curiosity
 
-bot.run('ODEwOTA3MTM2MDkwODMyOTc5.YCqeHw.gHSsA4qFek8e58Uu6RSp_3tr6vE')
+bot.run(os.environ['DISCORD_TOKEN'])
